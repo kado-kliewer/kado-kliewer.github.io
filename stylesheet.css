@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -14,10 +18,19 @@ nav {
 }
 
 .logo {
-    color: #FAFAFA;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    color:black;
+}
+
+.logo a:hover{
+    color:grey;
 }
 
 .nav-links {
@@ -31,12 +44,17 @@ nav {
 }
 
 .nav-links a{
-    color: #FAFAFA;
+    color: black;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
 }
+
+.nav-links a:hover{
+    color: grey;
+}
+
 .burger{
     display: none;
     cursor: pointer;
@@ -45,7 +63,7 @@ nav {
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: #FAFAFA;
+    background-color: black;
     margin: 5px;
 }
 
@@ -95,3 +113,69 @@ nav {
     }
 }
 
+.scroll-bar {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-style: solid;
+    border-color: #3EE3FF;
+    border-radius: 25px;
+}
+
+.title {
+    color: #FAFAFA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+.about-me {
+    color:#FAFAFA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title2 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 45px;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.body2 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.footer {
+    margin-top: 15px;
+}
+
+.footer-word1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: grey;
+    margin-bottom: 15px;
+}
