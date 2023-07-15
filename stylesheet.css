@@ -96,6 +96,7 @@ nav {
     .burger{
         display: block;
     }
+
 }
 
 .nav-active{
@@ -178,4 +179,33 @@ nav {
     align-items: center;
     color: grey;
     margin-bottom: 15px;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: #FAFAFA;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.contact-info p{
+    float:right;
+}
+
+.title3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-style: italic;
+    color: #FAFAFA;
+    margin-bottom: 65px;
+    margin-top: 150px;
 }
