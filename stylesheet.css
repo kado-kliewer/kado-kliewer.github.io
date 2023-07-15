@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+  }
+
 body {
     background-color: black;
+    position: relative;
 }
 
 nav {
@@ -32,6 +37,7 @@ nav {
 .logo a:hover{
     color:grey;
 }
+
 
 .nav-links {
     display: flex;
@@ -115,7 +121,6 @@ nav {
 }
 
 .scroll-bar {
-    background-color: red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -208,4 +213,19 @@ nav {
     color: #FAFAFA;
     margin-bottom: 65px;
     margin-top: 150px;
+}
+
+.contact {
+    padding: 10%;
+}
+
+@media screen and (max-width:768px) {
+    .contact-info {
+        padding-bottom: 150px;
+    }
+
+    .body2 {
+        font-size: 2vw;
+    }
+        
 }
