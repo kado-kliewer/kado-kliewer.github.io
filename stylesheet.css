@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-
-
-
 html, body {
     overflow-x: hidden;
     height: 100%;
@@ -130,9 +127,21 @@ nav {
     margin: 5px;
 }
 
-@media screen and (max-width:1024){
+@media screen and (min-width:1920px){
     .nav-links {
         width: 60%;
+    }
+
+    .grid-item {
+        padding: 20px;
+        text-align: center;
+        color: white;
+        border-radius: 8px;
+    }
+
+    .homeHead {
+        grid-column: span 4 !important;
+        grid-row: 1 !important;
     }
 }
 
@@ -311,7 +320,7 @@ nav {
 /* Add this style to create a grid layout */
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
     gap: 16px; /* Adjust the gap between grid items */
 }
 
