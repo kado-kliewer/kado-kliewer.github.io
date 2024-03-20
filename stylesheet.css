@@ -11,7 +11,8 @@ html, body {
     height: 100%;
 }
 
-  body {
+/* Style for the body on every page. Unchanging unless specifically specified. */
+body {
     background-color: #e0a96d;
     font-family: 'Poppins', sans-serif;
     margin: 0; /* Reset default margin */
@@ -22,6 +23,7 @@ html, body {
     min-height: 100vh;
 }
 
+/* Style for the navigation bar. Unchanging */
 nav {
     display: flex;
     justify-content: space-around;
@@ -89,29 +91,30 @@ nav {
 .nav-links a:after {
     content: "";
     position: absolute;
-    bottom: -5px; /* Adjust the distance of the underline from the text */
+    bottom: -5px; /* Adjusts the distance of the underline from the text */
     left: 0;
-    width: 0%; /* Set initial width to 0 */
-    height: 2px; /* Adjust the thickness of the underline */
+    width: 0%; /* Sets initial width to 0 */
+    height: 2px; /* Adjusts the thickness of the underline */
     background-color: white;
-    transition: width 0.3s ease; /* Add a transition for the width property */
+    transition: width 0.3s ease; /* Adds a transition for the width property */
 }
 
 .nav-links a:hover:after {
-    width: 100%; /* Expand the width to 100% on hover */
+    width: 100%; /* Expands the width to 100% on hover */
 }
 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Adjust as needed */
-    background-color: #201e20; /* Adjust the background color as needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    z-index: 1000; 
+    background-color: #201e20;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
+/* Style for content on every page */
 .content {
-    padding: 80px 16px 16px; /* Adjust padding to account for the fixed navbar */
+    padding: 80px 16px 16px; 
     flex: 1;
 }
 
@@ -540,6 +543,7 @@ nav {
     line-height: 2;
 }
 
+/* Style For Product Page */ 
 .product-card {
     grid-column-start: 2;
     grid-column-end: span 3;
@@ -555,6 +559,24 @@ nav {
     margin-left: 10px;
     background: white;
     box-shadow: 3px 3px 3px black;
+}
+
+.product-card2 {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    margin-top: 5.5rem;
+    border: black 3px solid;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background: white;
+    box-shadow: 3px 3px 3px black;
+    margin-bottom: 40px;
 }
 
 .product-image {
@@ -822,4 +844,106 @@ nav {
 .bttn12:hover {
     transform: scale(1.1);
     color: #fff;
+}
+
+.planHead {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+}
+
+.planpara {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 2;
+}
+
+.planpara1 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 3;
+}
+
+.planpara2 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 4;
+}
+
+.planpara3 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 5;
+}
+
+.planpara4 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 6;
+}
+
+.planpara5 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 7;
+}
+
+.planpara6 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 8;
+}
+
+.planpara7 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 9;
+}
+
+.planpara8 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 10;
+}
+
+.planpara9 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 11;
+}
+
+.planpara10 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 12;
+}
+
+.planpara11 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 13;
+}
+
+.planpara12 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 14;
+}
+
+.planpara13 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 15;
+}
+
+.planpara14 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 16;
+}
+
+.planpara15 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 17;
 }
